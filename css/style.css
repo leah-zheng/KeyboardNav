@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    font-family: 'ipix';
+    font-size: 25px;
+    font-weight: 900;
+    padding: 0 20px;
+}
+
+@font-face {
+    font-family: 'ipix';
+    src: url('../ipix.ttf');
+}
+
+main {
+    background: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+}
+
+
+/* 搜索 */
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 500px;
+    height: 45px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 20px 0 0 20px;
+    text-indent: 20px
+}
+
+.search_btn {
+    height: 45px;
+    width: 100px;
+    background: #017aff;
+    margin-left: -5px;
+    font-size: 14px;
+    border: 1px solid rgba(45, 86, 221, 0.05);
+    border-radius: 0 20px 20px 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding-right: 10px;
+    font-family: IPIX;
+}
+
+
+/* 键盘 */
+
+.keyboard {
+    width: 900px;
+    height: 300px;
+    background: rgba(184, 180, 180, 0.4);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.key {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(27, 27, 27, 0.5);
+    margin-right: 12px;
+}
+
+.key:hover {
+    box-shadow: inset 0px 0px 10px rgba(226, 222, 222, 0.5);
+}
+
+.key .text {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+}
+
+.key img {
+    display: block;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.key .edit {
+    position: absolute;
+    bottom: 9px;
+    right: 9px;
+    padding: 3px;
+    font-size: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #017aff;
+    color: #fff;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.key:hover .edit {
+    visibility: visible;
+}
