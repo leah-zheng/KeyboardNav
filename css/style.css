@@ -15,15 +15,54 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #f8f8f8;
-    font-family: 'ipix';
     font-size: 25px;
     font-weight: 900;
     padding: 0 20px;
 }
 
+.logo {
+    font-family: ipix;
+}
+
 @font-face {
     font-family: 'ipix';
-    src: url('../ipix.ttf');
+    src: url('ipix.ttf');
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.eot?t=1596080346644');
+    /* IE9 */
+    src: url('iconfont.eot?t=1596080346644#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMQAAsAAAAABsgAAALEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqBVIFSATYCJAMICwYABCAFhG0HMBv4BciemjyBhNjAAh5LiUQAIIJoLauenRCAjAPWCDqsDDxJ9/IloQUy4v7yL99BEbvMzqSitP/gvQ3Vp4PRQygaFe1V/X5VhvrEvdPfAgpkPqAc1940qQuoiwMpwL0wCmSDFEgA3jB2gUs4TaBaP2esjdjkbBDKrEmBuJOKK0CY88kyS1YK5TUrs3gBPJXpnn0J4Hn4/fgPniEkKStYZdsXMdUQ/mvHTuO069sV+wTw57OAraPALJCJ/drYJo5gdI7qGNcw2Fdx8CtDr/cNYq9/nihnFdaCXsi7J74ruNVkgtvqaQ04G3VjxFrT44/sp485M33B+vBsOxq4ONc2c9C18jQ/5vT8Kbdja2Zwqqfj6ODkMeblFQzsXNjw+Ji9MNIJ7SZePuc9/0KcnMMkTOXee/cv/3vhzvo3SC0zCY+xfj/anlvJjN/MSrbO8urP4LUVc9rs2+pX7C7Tc4TDaN1opMNxurQbqR+157S3n6dzzdq2Gv2ye92WflIf/1DItgJQui+eObm/9Tdey30cy0yDCWsy+B5f8R56SvcZ+jlA5cntwU/k92zKutDSp6zya9uTtZurqFaNEmBXs++xqrY7ToVKbSMcFfpSFCqNkjJtFmVqzKFcpWVUmxG3vkYLgiNyFab1AIRGa0jqvUSh0RUp075Qpt0fyjUGB9UOw3LHGuMhNYgiuILialTZgKRVahXjGKlBVJyJxTWKCpIVhoxcTHTSIPJwdS8m47AKkznm6GrFnpQyiCFqJYoF52GFQo00RC3DVdRVQqkm0M2NqbuSa5VaCQbWEVgFCquGVGqASFVRU2H8zpRB6fOZMLEaChVIS0ONOxdG6Ej7Rzy4cu9BipOpejXcyyU6tcQ8URQDYRBqSkgssGAKO6aGaOqHyWBVKFeSERGNQG6oFdNX5rq+Qvl1u6CapU5hDyqUX0qppKYSAA==') format('woff2'), url('iconfont.woff?t=1596080346644') format('woff'), url('iconfont.ttf?t=1596080346644') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1596080346644#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.gh-btn {
+    display: block;
+    width: 78px;
+    height: 30px;
+    background-color: #eee;
+    border: 1px solid #d5d5d5;
+    padding: 3px 10px 3px 8px;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 4px;
+}
+
+.iconfont {
+    display: inline-block;
+    font-family: "iconfont" !important;
+    font-size: 18px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.gh-text {
+    font-size: 16px;
+    font-weight: 900;
 }
 
 main {
@@ -48,7 +87,6 @@ main {
     height: 45px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 20px 0 0 20px;
     text-indent: 20px
 }
 
@@ -59,12 +97,9 @@ main {
     margin-left: -5px;
     font-size: 14px;
     border: 1px solid rgba(45, 86, 221, 0.05);
-    border-radius: 0 20px 20px 0;
     outline: none;
     color: #fff;
     cursor: pointer;
-    padding-right: 10px;
-    font-family: IPIX;
 }
 
 
